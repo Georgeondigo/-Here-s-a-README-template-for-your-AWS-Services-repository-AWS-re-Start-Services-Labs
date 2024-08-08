@@ -1,6 +1,6 @@
  #AWS 170-[SERV]-Lab - Create a Website on S3
 
-Check out my GitHub Repository - https://github.com/MFMKURIA/More-AWS-reStart-Labs-for-AWS-Services
+
 
  Detailed Step-by-Step Guide for Creating a Website on S3 Using AWS CLI
 

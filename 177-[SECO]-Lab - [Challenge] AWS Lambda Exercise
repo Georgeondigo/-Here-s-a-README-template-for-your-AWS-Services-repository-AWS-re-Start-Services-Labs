@@ -1,0 +1,119 @@
+AWS Lambda Exercise (Challenge)
+Lab overview
+In this challenge lab, you create an AWS Lambda function to count the number of words in a text file.
+
+ 
+
+Objectives
+After completing this lab, you will be able to do the following:
+
+Create a Lambda function to count the number of words in a text file.
+
+Configure an Amazon Simple Storage Service (Amazon S3) bucket to invoke a Lambda function when a text file is uploaded to the S3 bucket.
+
+Create an Amazon Simple Notification Service (Amazon SNS) topic to report the word count in an email.
+
+ 
+
+Duration
+This lab requires approximately 90 minutes to complete.
+
+ 
+
+Launch your lab environment
+At the top of these instructions, choose Start Lab to launch the lab.
+
+A Start Lab panel opens displaying the lab status.
+
+Wait until the message "Lab status: ready" appears, and then choose X to close the Start Lab panel.
+
+This lab provisions a new Amazon Web Services (AWS) account for you where you create the Lambda function and resources needed to complete the challenge.
+
+ 
+
+Your challenge
+Create a Lambda function to count the number of words in a text file. The general steps are as follows:
+
+Use the AWS Management Console to develop a Lambda function in Python and create the function's required resources.
+
+Report the word count in an email by using an SNS topic. Optionally, also send the result in an SMS (text) message.
+
+Format the response message as follows:
+
+The word count in the <textFileName> file is nnn. 
+Replace <textFileName> with the name of the file.
+
+Enter the following text as the email subject: Word Count Result
+
+Automatically invoke the function when the text file is uploaded to an S3 bucket.
+
+Test the function by uploading a few sample text files with different word counts to the S3 bucket.
+
+Forward the email that one of your tests produces and a screenshot of your Lambda function to your instructor.
+
+ 
+
+Hints 
+
+Create all of your resources in the same AWS Region.
+
+You need an AWS Identity and Access Management (IAM) role for the Lambda function to access other AWS services. Because the lab policy does not permit the creation of an IAM role, use the LambdaAccessRole role. The LambdaAccessRole role provides the following permissions:
+
+AWSLambdaBasicExecutionRole
+
+This is an AWS managed policy that provides write permissions to Amazon CloudWatch Logs.
+
+AmazonSNSFullAccess
+
+This is an AWS managed policy that provides full access to Amazon SNS via the AWS Management Console.
+
+AmazonS3FullAccess
+
+This is an AWS managed policy that provides full access to all buckets via the AWS Management Console.
+
+CloudWatchFullAccess
+
+This is an AWS managed policy that provides full access to Amazon CloudWatch.
+
+Refer to the following lab for additional guidance:
+
+Working with AWS Lambda
+
+ 
+
+Conclusion
+Congratulations! You now have successfully done the following:
+
+Created a Lambda function to count the number of words in a text file
+
+Configured an S3 bucket to invoke a Lambda function when a text file is uploaded to the S3 bucket
+
+Created an Amazon SNS topic to report the word count in an email
+
+ 
+
+Lab complete
+When you are finished with the lab, follow these steps end the lab:
+
+At the top of this page, choose End Lab and then choose Yes to confirm that you want to end the lab.  
+
+A panel appears indicating that "You may close this message box now. Lab resources are terminating."
+
+To close the End Lab panel, choose the X in the upper-right corner. 
+
+ 
+
+Additional resources
+What is AWS Lambda?
+
+Using an Amazon S3 trigger to invoke a Lambda function
+
+AWS managed policy
+
+For more information about AWS Training and Certification, see AWS Training and Certification.
+
+Your feedback is welcome and appreciated.
+
+If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
+
+© 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
